@@ -56,7 +56,12 @@ wolfy[0] = "Gameboy"
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+//.1
+const members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+for (turtle in members){
+    members[turtle] = members[turtle].toUpperCase()
+}
+console.log(members)
 
 ////////////////////////////////
 // Methods, Revisited
