@@ -52,17 +52,11 @@ wolfy[3] = "Gotham City"
 
 //3.
 dart[3] += " Hawkins"
-
+wolfy[0] = "Gameboy"
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-//4.
-wolfy[0] = "Gameboy"
 
-console.log(wolfy)
-console.log(sharky)
-console.log(plantee)
-console.log(dart)
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
