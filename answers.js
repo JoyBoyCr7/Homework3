@@ -120,10 +120,17 @@ function indexFinder(search){
 
 console.log(newSlice.findIndex(indexFinder))
 
-
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+//.1
+whereIsWaldo.splice(1,1)
+whereIsWaldo[1][2] = "No One"
+console.log(whereIsWaldo[2][1][1])
 
 
 ////////////////////////////////
