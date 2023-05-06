@@ -224,6 +224,13 @@ function thomRanfit(){
 //////////////////////////////////////
 
 // logging them in their new fits
-console.log(`krystn will have a ${kristynsRanfit()[0]} with ${kristynsRanfit()[1]} and ${kristynsRanfit()[2]} on`)
-console.log(`Thoms will have a ${thomRanfit()[0]} with ${thomRanfit()[1]} and ${thomRanfit()[2]} on`)
+console.log(`krystyn will have a ${kristynsRanfit()[0]} with ${kristynsRanfit()[1]} and ${kristynsRanfit()[2]} on`)
+console.log(`Thom will have a ${thomRanfit()[0]} with ${thomRanfit()[1]} and ${thomRanfit()[2]} on`)
 
+// Dirty Laundry
+for(item in kristynsCloset){
+    console.log(`WHIRR: Now washing ${kristynsCloset[item]}`)
+}
+
+// Inventory
+console.log(thomsCloset[0],thomsCloset[1],thomsCloset[2])
