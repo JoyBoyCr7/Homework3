@@ -158,3 +158,72 @@ const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,
 nums.sort(function(a, b){return a-b});
 console.log(nums)
 console.log(nums[Math.floor(nums.length / 2)])
+
+///////////////////////////////
+//  Hungry for More?
+///////////////////////////////
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  
+  //.1 
+
+let kristynsShoe = kristynsCloset[0]
+
+thomsCloset[2].push(kristynsShoe)
+// Dress Us Up
+
+let kristynsOutFits = [[kristynsCloset[0], kristynsCloset[1],kristynsCloset[3]],
+    [kristynsCloset[0],kristynsCloset[3],kristynsCloset[2]],
+    [kristynsCloset[4],kristynsCloset[0],kristynsCloset[5]]]
+
+let thomsOutFits = [[thomsCloset[0][0], thomsCloset[1][0], thomsCloset[2][0]],
+    [thomsCloset[0][1],thomsCloset[1][1],thomsCloset[2][1]],
+    [thomsCloset[0][2],thomsCloset[1][2],thomsCloset[2][0]]]
+
+//console.log(thomsOutFits)
+//console.log(kristynsOutFits)
+
+// Get a random outfit from the outfits
+function kristynsRanfit(){ 
+    let number = Math.floor(Math.random() * kristynsOutFits.length)
+    return kristynsOutFits[number]
+}
+function thomRanfit(){ 
+    let number = Math.floor(Math.random() * thomsOutFits.length)
+        return thomsOutFits[number]
+}
+//////////////////////////////////////
+
+// logging them in their new fits
+console.log(`krystn will have a ${kristynsRanfit()[0]} with ${kristynsRanfit()[1]} and ${kristynsRanfit()[2]} on`)
+console.log(`Thoms will have a ${thomRanfit()[0]} with ${thomRanfit()[1]} and ${thomRanfit()[2]} on`)
+
