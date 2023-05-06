@@ -136,6 +136,19 @@ console.log(whereIsWaldo[2][1][1])
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+//.1
+
+for (let i = 0;i < 20; i++){
+    let randomNumber = Math.floor(Math.random() * 2)
+    console.log("Love me, pet me! HSSSSSS!")
+    if (randomNumber == 1){
+        console.log("...why does the red dot always get away...")
+    }
+    else if (i % 2 == 0){
+       console.log("...human...why you taking pictures of me?...")
+    }
+    
+}
 
 
 ////////////////////////////////
